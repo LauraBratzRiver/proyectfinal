@@ -42,6 +42,7 @@
                     @endauth
                 </div>
             @endif
+      
 
             <div class="row">
      <div class="row row-cols-1 text-center mt-5 mb-3">

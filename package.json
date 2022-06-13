@@ -24,6 +24,7 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
-        "mix": "^0.0.1"
+        "mix": "^0.0.1",
+        "socket.io": "^4.5.1"
     }
 }

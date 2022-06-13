@@ -26,19 +26,7 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                   CarWash
                 </a>
-
-                <a @click="abrirForm('cliente')" class="nav-link"  href="{{ url('cliente') }}">
-                    Clientes
-                <a/>
-                <a class="navbar-brand" href="{{ url('') }}">
-                    Reservacion
-                </a>
-                <a class="navbar-brand" href="{{ url('') }}">
-                    Chat
-                </a>
-                <a class="navbar-brand" href="/">
-               <img src="https://img4.grocerymeta.com/773/381/4923291067733818.jpg#.Ym7yU6XjUic.link" width="100" height="100" class="d-inline-block align-top" alt="">
-                </a>
+              
                 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Clientes') }}">
                     <span class="navbar-toggler-icon"></span>

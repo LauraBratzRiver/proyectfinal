@@ -26,6 +26,14 @@ Route::get('home', function () {
 
 
 Route::apiResource('clientes', ClientesController::class);
+Route::get('clientes/{id}/destroy', 'ClientesController@destroy');
+Route::get('clientes/{id}/edit', 'ClientesController@edit');
+Route::get('clientes/{id}/update', 'ClientesController@update');
+Route::get('clientes/{id}/show', 'ClientesController@show');
+Route::get('clientes/{id}/create', 'ClientesController@create');
+Route::get('clientes/{id}/store', 'ClientesController@store');
+Route::get('clientes/{id}/index', 'ClientesController@index');
+
 
 
 

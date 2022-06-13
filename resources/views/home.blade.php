@@ -16,6 +16,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto CAR WASH</title>
+    <body class="p-3 mb-2 bg-danger text-white" >
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home">::.CAR WASH.::</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">  
+            <li class="nav-item">
+             <a @click="abrirForm('cliente')" class="nav-link" href="{{ url('/index') }}">{{ __('Clientes') }}<a/>
+            </li>       
+            <li class="nav-item"> 
+            <a @click="abrirForm('Reservacion')" class="nav-link" href="">Reservacion<a/>
+            </li>
+            <li class="nav-item"> 
+            <a @click="abrirForm('Reservacion')" class="nav-link" href="">Calendario<a/>
+            </li>
+            <a class="navbar-brand" href="{{ url('') }}">
+                    Chat
+                </a>
+                <a class="navbar-brand" href="/">
+               <img src="https://img4.grocerymeta.com/773/381/4923291067733818.jpg#.Ym7yU6XjUic.link" width="100" height="100" class="d-inline-block align-top" alt="">
+                </a>
+         </ul>  
+            </div>
+        </div>
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"

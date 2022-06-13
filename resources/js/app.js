@@ -26,7 +26,8 @@ window.generarIdUnicoFecha = ()=>{
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-import alumno from './components/AlumnoComponent.vue';
+import cliente from './components/ClienteComponent.vue';
+import reservacion from './components/ReservacionComponent.vue';
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -38,11 +39,13 @@ const app = new Vue({
 
     components:{
         cliente,
+        reservacion,
         
     },
     data:{
         forms:{
             cliente:{mostrar:false},
+            reservacion:{mostrar:false}
           
         }
     },
@@ -62,6 +65,7 @@ const app = new Vue({
             indexDb.onupgradeneeded = e=>{
                 let db = e.target.result;
                 let tblcliente = db.createObjectStore('cliente', {keyPath:'idCliente'});
+                
  ;
 
                 tblcliente.createIndex('idCliente', 'idCliente', {unique:true});
